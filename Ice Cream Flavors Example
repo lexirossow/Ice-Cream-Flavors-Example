@@ -1,0 +1,35 @@
+#!usr/bin/env python3
+
+#Select Your Flavor
+#icecream.py
+#Lexi Rossow
+#September 6, 2022
+#display a menu, validate the choice
+
+#constants
+FLAVOR1 = "Vanilla"
+FLAVOR2 = "Chocolate"
+FLAVOR3 = "Strawberry"
+
+#menu
+print(f"1. {FLAVOR1}")
+print(f"2. {FLAVOR2}")
+print(f"3. {FLAVOR3}")
+
+#prompt user for selection
+userOrder = int(input("Please select an item from the above choices: "))
+
+#validate the input, display the selection
+if userOrder == 1:
+    print("You chose vanilla.")
+    userConfirm = input("Are you sure? y/n: ")
+    if userConfirm == "y":
+        print("Okay! Here comes the ice cream!")
+    else:
+        print("Smart choice. Vanilla is plain.")
+elif userOrder == 2:
+    print("You chose chocolate.")
+elif userOrder == 3:
+    print("You chose strawberry.")
+else:
+    print("Sorry! We don't have that flavor.")
